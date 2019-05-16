@@ -17,4 +17,8 @@ class JeroenPauwPalindromeTest < Minitest::Test
   def test_palindrome_with_punctuation
     assert "Madam, I'm Adam.".palindrome?
   end
+
+  def test_blank_string
+    refute "   ".palindrome?
+  end
 end
